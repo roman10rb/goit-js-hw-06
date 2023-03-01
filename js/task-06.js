@@ -8,12 +8,10 @@ const validation = (event) => {
         event.target.classList.remove('invalid');
         event.target.classList.add('valid');
     }
-    else if (lengthValue !== Number(atribyte) ) {
+    else {
         event.target.classList.add('invalid');
         event.target.classList.remove('valid');
-    } else {
-    event.target.classList.remove('valid');
-    event.target.classList.remove('invalid');}
+    };
     
 };
 inputEl.addEventListener('blur', validation);
